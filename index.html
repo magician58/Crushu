@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal Flow</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="page1" class="container">
+        <h1>Hello Mam</h1>
+        <p>Please click "Continue" to proceed.</p>
+        <button onclick="goToPage2()">Continue &#8594;</button>
+    </div>
+
+    <div id="page2" class="container hidden">
+        <h1>I really like you</h1>
+        <button onclick="goToPage3()">Aww, malai thaxa kate vanxa hau</button>
+        <p>Please click it.</p>
+    </div>
+
+    <div id="page3" class="container hidden">
+        <h1>Hello Mam,</h1>
+        <p>How are you?</p>
+        <p>It's me, ________ <i>(fill yourself)</i></p>
+        <p>Hai, yo maile tmero lage banaudai xu hai...</p>
+        <button onclick="goToPage4()">Continue &#8594;</button>
+    </div>
+
+    <div id="page4" class="container hidden">
+        <h1>Tmero bf xa ke xaina?</h1>
+        <p>Feri yetro banaeyako bf xa re vaye pane kahe hudaina tara navaye hunthiyo.</p>
+        <button onclick="showYesNo()">Yes</button>
+        <button onclick="showYesNo()">No</button>
+    </div>
+
+    <div id="popup" class="hidden">
+        <p>Sachi xaina ho?</p>
+        <button onclick="goToPage5()">Yes1</button>
+        <button onclick="goToPage5()">No2</button>
+    </div>
+
+    <div id="page5" class="container hidden">
+        <h1>OMG, 2 months lagayera varkhar yete vayo!</h1>
+        <p>Launa kahe le sakinxa hau? Aba yete gardha, please bola la ma sanga.</p>
+        <button onclick="goToPage6()">Continue &#8594;</button>
+    </div>
+
+    <div id="page6" class="container hidden">
+        <h1>Warning ⛔️</h1>
+        <p>Please kasailai ne navana la yo chai, please cell lai ne navana la please.</p>
+        <p>Ani sorry la.</p>
+    </div>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
